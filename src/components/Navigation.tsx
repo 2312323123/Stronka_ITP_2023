@@ -19,6 +19,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   z-index: 5;
   height: 6vh;
+  padding: .5em 0;
 
   a {
     text-decoration: none;
