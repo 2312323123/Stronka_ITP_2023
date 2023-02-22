@@ -3,6 +3,14 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 // @ts-ignore
 import gear_icon from "../images/gear.svg"
+// @ts-ignore
+import itp_logo from "../images/navbar/itp-01.svg"
+// @ts-ignore
+import fb_icon from "../images/navbar/fb-01.svg"
+// @ts-ignore
+import ig_icon from "../images/navbar/ig-01.svg"
+// @ts-ignore
+import li_icon from "../images/navbar/li-01.svg"
 
 const Nav = styled.nav`
   background-color: #E5C9AD;
@@ -34,11 +42,25 @@ const Nav = styled.nav`
 `
 
 const LogoContainer = styled.div`
-
+  min-width: 10%;
+  width: 15%;
+  img {
+    display: block;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    & {
+      height: 15vh;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
 `
 
 const LinkContainer = styled.div`
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: center;
   gap: 5%;
@@ -47,6 +69,23 @@ const LinkContainer = styled.div`
 `
 
 const SocialsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 12%;
+  margin-right: 1%;
+  img {
+    display: block;
+    height: 80%;
+  }
+  
+  @media (max-width: 768px) {
+    & {
+      height: 10%;
+      width: 30%;
+    }
+  }
 `
 
 const NavControlButton = styled.button`
@@ -91,7 +130,7 @@ const Navigation: React.FC = () => {
         <>
             <Nav className={"navigation " + navClass}>
                 <LogoContainer>
-                    Logo
+                    <img src={itp_logo} alt="XXV Inżynierskie Targi Pracy" />
                 </LogoContainer>
                 <LinkContainer className="links">
                     {links.map((link, i) =>
@@ -101,7 +140,9 @@ const Navigation: React.FC = () => {
                     )}
                 </LinkContainer>
                 <SocialsContainer>
-                    Socials
+                    <img src={fb_icon} alt="facebook"/>
+                    <img src={ig_icon} alt="instagram"/>
+                    <img src={li_icon} alt="linkedin"/>
                 </SocialsContainer>
             </Nav>
             <NavControlButton onClick={() => setShowNav(!showNav)} className={buttonClass}>
