@@ -84,6 +84,10 @@ const SocialsContainer = styled.div`
     & {
       height: 10%;
       width: 30%;
+      margin-right: 0;
+      img {
+        max-width: 33%;
+      }
     }
   }
 `
