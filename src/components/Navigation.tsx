@@ -121,7 +121,7 @@ interface ILink {
 
 const links: ILink[] = [
     {name: "Home", path: "/"},
-    {name: "Sponsorzy", path: "/sponsors"},
+    {name: "Sponsorzy", path: "/#sponsors"},
 ]
 
 const Navigation: React.FC = () => {
