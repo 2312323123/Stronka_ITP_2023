@@ -215,14 +215,14 @@ const FXMAG = styled.img`
     right: 16%;
     top: 88.6%;
     width: 11%;
-  }5
+  };
 `
 
 
 
 const Sponsors: React.FC = () => {
     return(
-        <>
+        <div id="sponsors">
             <Container>
                 <ImgDesktop src={imagesDesktop[3].default} alt="img4"/>
                 <ImgDesktop src={imagesDesktop[4].default} alt="img5"/>
@@ -250,7 +250,7 @@ const Sponsors: React.FC = () => {
                 <FXMAG src={logos[14].default} alt="FXMAG"/>
             
             </Container>
-        </>
+        </div>
 
     )
 }
