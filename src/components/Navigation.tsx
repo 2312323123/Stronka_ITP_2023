@@ -27,17 +27,21 @@ const Nav = styled.nav`
   }
 
   @media (max-width: 768px) {
-    height: 95vh;
-    width: 98vw;
+    height: calc(99vh - calc(100vh - 100%));
+    width: 100vw;
     max-width: 100vw;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     transition: max-width .5s ease-in-out;
     font-size: xx-large;
 
     &.hidden {
-      max-width: 0 !important;
+      max-width: 0;
       overflow: hidden;
+    }
+    
+    a {
+      font-size: 2.5rem;
     }
   }
 `
@@ -45,10 +49,12 @@ const Nav = styled.nav`
 const LogoContainer = styled.div`
   min-width: 10%;
   width: 15%;
+
   img {
     display: block;
     height: 100%;
   }
+
   @media (max-width: 768px) {
     & {
       height: 15vh;
@@ -57,7 +63,7 @@ const LogoContainer = styled.div`
       justify-content: center;
     }
   }
-  
+
 `
 
 const LinkContainer = styled.div`
@@ -76,16 +82,18 @@ const SocialsContainer = styled.div`
   height: 100%;
   width: 12%;
   margin-right: 1%;
+
   img {
     display: block;
     height: 80%;
   }
-  
+
   @media (max-width: 768px) {
     & {
-      height: 10%;
-      width: 30%;
+      height: 15%;
+      width: 40%;
       margin-right: 0;
+
       img {
         max-width: 33%;
       }
@@ -94,7 +102,7 @@ const SocialsContainer = styled.div`
 `
 
 const NavControlButton = styled.button`
-  position: absolute;
+  position: fixed;
   z-index: 10;
   display: none;
   @media (max-width: 768px) {
@@ -105,11 +113,12 @@ const NavControlButton = styled.button`
   border: none;
   background: none;
   transition: transform .6s ease-in-out;
+
   img {
     max-width: 100%;
     max-height: 100%;
   }
-  
+
   &.opened {
     transform: rotate(360deg);
   }
@@ -128,6 +137,16 @@ const links: ILink[] = [
 const Navigation: React.FC = () => {
 
     const [showNav, setShowNav] = useState(false)
+    const toggleNav = () => {
+        if (!showNav) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+        setShowNav(!showNav)
+    }
+
+
     const navClass = showNav ? "" : "hidden"
     const buttonClass = showNav ? "opened" : ""
 
@@ -135,11 +154,11 @@ const Navigation: React.FC = () => {
         <>
             <Nav className={"navigation " + navClass}>
                 <LogoContainer>
-                    <img src={itp_logo} alt="XXV Inżynierskie Targi Pracy" />
+                    <img src={itp_logo} alt="XXV Inżynierskie Targi Pracy"/>
                 </LogoContainer>
                 <LinkContainer className="links">
                     {links.map((link, i) =>
-                        <Link to={link.path} key={i}>
+                        <Link to={link.path} key={i} onClick={toggleNav}>
                             {link.name}
                         </Link>
                     )}
@@ -150,7 +169,7 @@ const Navigation: React.FC = () => {
                     <img src={li_icon} alt="linkedin"/>
                 </SocialsContainer>
             </Nav>
-            <NavControlButton onClick={() => setShowNav(!showNav)} className={buttonClass}>
+            <NavControlButton onClick={toggleNav} className={buttonClass}>
                 <img src={gear_icon} alt="menu"/>
             </NavControlButton>
         </>
