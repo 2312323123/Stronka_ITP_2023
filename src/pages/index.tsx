@@ -7,12 +7,14 @@ import TitlePage from '../components/TitlePage'
 import Map from '../components/Map'
 import Sponsors from '../components/Sponsors'
 import Organizers from '../components/Organizers'
+import TextPage from '../components/TextPage';
 
 const MainPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <TitlePage />
-      <Map />
+      <TextPage/>
+      <Map/>
       <Sponsors />
       <Organizers />
       <p>
