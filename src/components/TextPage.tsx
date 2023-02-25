@@ -3,7 +3,6 @@ import React from 'react';
 import img2_desktop from '../images/DesktopBackgrounds/2.jpg';
 //@ts-ignore
 import img2_mobile from '../images/MobileBackgrounds/2.jpg';
-//@ts-ignore
 import styled from "styled-components";
 const Img = styled.img`
   width: 100%;

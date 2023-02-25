@@ -6,7 +6,6 @@ import img3_desktop from '../images/DesktopBackgrounds/3.jpg';
 import img3_mobile from '../images/MobileBackgrounds/3.jpg';
 //@ts-ignore
 import map1 from '../images/map.svg';
-//@ts-ignore
 import styled from "styled-components";
 const Img = styled.img`
   width: 100%;

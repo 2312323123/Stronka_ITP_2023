@@ -1,5 +1,4 @@
 import React from 'react';
-//@ts-ignore
 import styled from "styled-components";
 
 function importAll(r: any) {
@@ -246,7 +245,7 @@ const SponsorsTitle = styled(TitleName)`
 const StudentPartner = styled(TitleName)`
   left: 17.7%;
   top: 56%;
-  fontpsize: 2.7vw;
+  font-size: 2.7vw;
   height: 4%;
 `
 

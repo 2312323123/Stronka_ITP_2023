@@ -4,7 +4,6 @@ import React from 'react';
 import img8_desktop from '../images/DesktopBackgrounds/8.svg';
 //@ts-ignore
 import img6_mobile from '../images/MobileBackgrounds/6.jpg';
-//@ts-ignore
 import styled from "styled-components";
 const Img = styled.img`
   width: 100%;
