@@ -5,18 +5,21 @@ import BEST_logo from '../images/landing_page/BEST_logo.png'
 // @ts-ignore
 import ITP_logo from '../images/landing_page/ITP_logo.png'
 // @ts-ignore
-import tlo_pc_1 from '../images/landing_page/tlo_pc_1.jpg'
+import tlo_pc_1 from '../images/landing_page/1.svg'
 import styled from 'styled-components'
 
+import Wave from './Wave'
+
 const Section = styled.section`
-  display: relative;
   width: 100%;
   height: 100vh;
   background: #efd7bf url(${tlo_pc_1});
   background-size: cover;
   background-position: bottom;
+  position: relative;
+  z-index: 2;
   @media (min-width: 768px) {
-    height: calc(100vh - 6vh);
+    height: calc(100vh - 6vh - 1em);
   }
 `
 
@@ -79,15 +82,18 @@ const H2_smaller = styled.h2`
 
 const TitlePage: React.FC = () => {
   return (
-    <Section>
-      <HeroTextContainer>
-        <ITPLogo src={ITP_logo} alt="ITP_logo" />
-        <H2>8 marca 2023</H2>
-        <H2>10:00-16:00</H2>
-        <H2_smaller>stadion miejski im. Henryka Reymana</H2_smaller>
-      </HeroTextContainer>
-      <BESTLogo src={BEST_logo} alt="BEST_logo" />
-    </Section>
+    <>
+      <Section>
+        <HeroTextContainer>
+          <ITPLogo src={ITP_logo} alt="ITP_logo" />
+          <H2>8 marca 2023</H2>
+          <H2>10:00-16:00</H2>
+          <H2_smaller>stadion miejski im. Henryka Reymana</H2_smaller>
+        </HeroTextContainer>
+        <BESTLogo src={BEST_logo} alt="BEST_logo" />
+        <Wave />
+      </Section>
+    </>
   )
 }
 
