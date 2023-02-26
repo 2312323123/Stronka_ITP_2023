@@ -236,6 +236,47 @@ const FXMAG = styled.a`
   } ;
 `
 
+const TitleName = styled.div`
+  position: absolute;
+  background-color: #ead8ce;
+  width: 18%;
+  height: 3.2%;
+  font-size: 2.4vw;
+  color: #d2764a;
+  text-align: center;
+  align-items: center;
+  display: flexbox;
+  justify-content:center;
+  @media (max-width: 768px) {
+    display: none;
+  };
+`
+
+const MainSponsorTitle = styled(TitleName)`
+  left: 43%;
+  top: 5.7%;
+`
+const SponsorsTitle = styled(TitleName)`
+  left: 41%;
+  top: 28.4%;
+`
+
+const StudentPartner = styled(TitleName)`
+  left: 17.7%;
+  top: 56%;
+  fontpsize: 2.7vw;
+  height: 4%;
+`
+
+const ContentPartner = styled(StudentPartner)`
+  left: 64%;
+`
+
+const MediaTitle = styled(TitleName)`
+  left: 41%;
+  top: 78.2%;
+`
+
 const Sponsors: React.FC = () => {
   return (
     <div id="sponsors">
@@ -246,8 +287,14 @@ const Sponsors: React.FC = () => {
         <ImgDesktop src={imagesDesktop[6].default} alt="img7" />
         <Crane src={imagesDesktop[8].default} alt="crane" />
 
-        <ImgMobile src={imagesMobile[3].default} alt="img4" />
-        <ImgMobile src={imagesMobile[4].default} alt="img5" />
+        <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
+        <SponsorsTitle>SPONSORZY</SponsorsTitle>
+        <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
+        <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
+        <MediaTitle>PATRONI MEDIALNI</MediaTitle>
+
+        <ImgMobile src={imagesMobile[3].default} alt="img4"/>
+        <ImgMobile src={imagesMobile[4].default} alt="img5"/>
 
         {/* Sabre */}
         <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
