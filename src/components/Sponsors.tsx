@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
+import MovingGears from './MovingGears'
 
 function importAll(r: any) {
   return r.keys().map(r)
@@ -245,10 +246,10 @@ const TitleName = styled.div`
   text-align: center;
   align-items: center;
   display: flexbox;
-  justify-content:center;
+  justify-content: center;
   @media (max-width: 768px) {
     display: none;
-  };
+  } ;
 `
 
 const MainSponsorTitle = styled(TitleName)`
@@ -286,14 +287,20 @@ const Sponsors: React.FC = () => {
         <ImgDesktop src={imagesDesktop[6].default} alt="img7" />
         <Crane src={imagesDesktop[8].default} alt="crane" />
 
+        <MovingGears />
+
         <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
         <SponsorsTitle>SPONSORZY</SponsorsTitle>
-        <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
-        <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
+        <StudentPartner>
+          PARTNER <br /> STREFY <br /> STUDENTA
+        </StudentPartner>
+        <ContentPartner>
+          PARTNER <br /> MERYTORYCZNY{' '}
+        </ContentPartner>
         <MediaTitle>PATRONI MEDIALNI</MediaTitle>
 
-        <ImgMobile src={imagesMobile[3].default} alt="img4"/>
-        <ImgMobile src={imagesMobile[4].default} alt="img5"/>
+        <ImgMobile src={imagesMobile[3].default} alt="img4" />
+        <ImgMobile src={imagesMobile[4].default} alt="img5" />
 
         {/* Sabre */}
         <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">

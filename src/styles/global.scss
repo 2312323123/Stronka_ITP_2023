@@ -90,12 +90,13 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Unica One", sans-serif;
+  font-family: 'Unica One', sans-serif;
   font-size: clamp(1rem, 3vw, 1.4rem);
   color: #cd5d28;
 }
 body {
   background-color: #efd6bf;
+  overflow-x: hidden;
 }
 /* HTML5 display-role reset for older browsers */
 article,
