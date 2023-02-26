@@ -20,7 +20,7 @@ const Wave = () => {
     height: '100%',
     width: '100%',
     transform: 'rotate(180deg)',
-    fill: '#cd5d28',
+    fill: 'black', // '#cd5d28',
     position: 'absolute',
     top: '100%',
     left: '0',
