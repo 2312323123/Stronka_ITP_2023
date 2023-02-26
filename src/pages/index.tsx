@@ -7,24 +7,16 @@ import TitlePage from '../components/TitlePage'
 import Map from '../components/Map'
 import Sponsors from '../components/Sponsors'
 import Organizers from '../components/Organizers'
-import TextPage from '../components/TextPage';
+import TextPage from '../components/TextPage'
 
 const MainPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <TitlePage />
-      <TextPage/>
-      <Map/>
+      <TextPage />
+      <Map />
       <Sponsors />
       <Organizers />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-        aperiam dignissimos, dolor eaque eius et eveniet in inventore iste
-        nobis, odit possimus quaerat qui ratione recusandae rem vitae! At,
-        blanditiis deserunt ea eaque earum eligendi eum eveniet inventore ipsa
-        iusto maxime neque nobis nulla omnis quaerat repudiandae voluptas
-        voluptatem voluptates.
-      </p>
     </Layout>
   )
 }
