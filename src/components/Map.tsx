@@ -31,7 +31,7 @@ const MapBox = styled.div`
   top: 20%;
   background-color: #cd5d29;
   align-items: center;
-  display: flexbox;
+  display: flex;
   justify-content:center;
   @media (max-width: 769px) {
     background-color: rgba(0,0,0,0); 
@@ -44,7 +44,7 @@ const MapBox = styled.div`
 const Map: React.FC = () => {
     return(
         <>
-            <Container>
+            <Container id="map">
                 <picture>
                     <source srcSet={img3_desktop} media="(min-width: 769px)" />
                     <source srcSet={img3_mobile} media="(max-width: 768px)" />

@@ -12,6 +12,13 @@ import ig_icon from "../images/navbar/ig-01.svg"
 // @ts-ignore
 import li_icon from "../images/navbar/li-01.svg"
 
+
+const socialLinks = {
+    facebook: "https://www.facebook.com/BEST.itp",
+    instagram: "https://www.instagram.com/itp_best/",
+    linkedin: "https://www.linkedin.com/company/in%C5%BCynierskie-targi-pracy/",
+}
+
 const Nav = styled.nav`
   background-color: #E5C9AD;
   display: flex;
@@ -39,7 +46,7 @@ const Nav = styled.nav`
       max-width: 0;
       overflow: hidden;
     }
-    
+
     a {
       font-size: 2.5rem;
     }
@@ -83,9 +90,14 @@ const SocialsContainer = styled.div`
   width: 12%;
   margin-right: 1%;
 
+  a {
+    height: 80%;
+  }
+
   img {
     display: block;
-    height: 80%;
+    height: 100%;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -94,8 +106,12 @@ const SocialsContainer = styled.div`
       width: 40%;
       margin-right: 0;
 
-      img {
+      a {
         max-width: 33%;
+      }
+      
+      img {
+        width: 95%;
       }
     }
   }
@@ -131,14 +147,20 @@ interface ILink {
 
 const links: ILink[] = [
     {name: "Home", path: "/"},
+    {name: "Mapa", path: "/#map"},
     {name: "Sponsorzy", path: "/#sponsors"},
+    {name: "Patroni", path: "/#patrons"},
+    {name: "Partnerzy", path: "/#partners"},
+    {name: "Wyślij CV", path: "https://docs.google.com/forms/d/e/1FAIpQLSc36Pr-ib_wTRvGmZ5Lt8QUBBYu5BdenBO2TvuImyFKWEZxfQ/viewform?usp=sf_link"},
+    {name: "O Beście", path: "https://www.newsite.best.krakow.pl/"},
+
 ]
 
 const Navigation: React.FC = () => {
 
     const [showNav, setShowNav] = useState(false)
-    const toggleNav = () => {
-        if (!showNav) {
+    const toggleNav = (toggleScroll = false) => {
+        if (!showNav && toggleScroll) {
             document.body.style.overflow = "hidden"
         } else {
             document.body.style.overflow = "auto"
@@ -158,18 +180,24 @@ const Navigation: React.FC = () => {
                 </LogoContainer>
                 <LinkContainer className="links">
                     {links.map((link, i) =>
-                        <Link to={link.path} key={i} onClick={toggleNav}>
+                        <Link to={link.path} key={i} onClick={() => toggleNav()}>
                             {link.name}
                         </Link>
                     )}
                 </LinkContainer>
                 <SocialsContainer>
-                    <img src={fb_icon} alt="facebook"/>
-                    <img src={ig_icon} alt="instagram"/>
-                    <img src={li_icon} alt="linkedin"/>
+                    <a href={socialLinks["facebook"]}>
+                        <img src={fb_icon} alt="facebook"/>
+                    </a>
+                    <a href={socialLinks["instagram"]}>
+                        <img src={ig_icon} alt="instagram"/>
+                    </a>
+                    <a href={socialLinks["linkedin"]}>
+                        <img src={li_icon} alt="linkedin"/>
+                    </a>
                 </SocialsContainer>
             </Nav>
-            <NavControlButton onClick={toggleNav} className={buttonClass}>
+            <NavControlButton onClick={() => toggleNav(true)} className={buttonClass}>
                 <img src={gear_icon} alt="menu"/>
             </NavControlButton>
         </>

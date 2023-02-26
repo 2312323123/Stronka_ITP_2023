@@ -244,7 +244,7 @@ const TitleName = styled.div`
   color: #d2764a;
   text-align: center;
   align-items: center;
-  display: flexbox;
+  display: flex;
   justify-content:center;
   @media (max-width: 768px) {
     display: none;
@@ -280,24 +280,24 @@ const Sponsors: React.FC = () => {
   return (
     <div id="sponsors">
       <Container>
-        <ImgDesktop src={imagesDesktop[3].default} alt="img4" />
-        <ImgDesktop src={imagesDesktop[4].default} alt="img5" />
-        <ImgDesktop src={imagesDesktop[5].default} alt="img6" />
-        <ImgDesktop src={imagesDesktop[6].default} alt="img7" />
-        <Crane src={imagesDesktop[8].default} alt="crane" />
+        <ImgDesktop src={imagesDesktop[3].default} alt="img4"/>
+        <ImgDesktop src={imagesDesktop[4].default} alt="img5"/>
+        <ImgDesktop id="partners" src={imagesDesktop[5].default} alt="img6"/>
+        <ImgDesktop id="patrons" src={imagesDesktop[6].default} alt="img7"/>
+        <Crane src={imagesDesktop[8].default} alt="crane"/>
 
         <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
         <SponsorsTitle>SPONSORZY</SponsorsTitle>
+
         <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
         <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
-        <MediaTitle>PATRONI MEDIALNI</MediaTitle>
 
         <ImgMobile src={imagesMobile[3].default} alt="img4"/>
         <ImgMobile src={imagesMobile[4].default} alt="img5"/>
 
         {/* Sabre */}
         <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
-          <SponsorImg src={logos[0].default} alt="Sabre" />
+          <SponsorImg src={logos[0].default} alt="Sabre"/>
         </Sabre>
 
         {/* Woodward */}
