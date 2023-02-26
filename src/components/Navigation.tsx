@@ -106,8 +106,12 @@ const SocialsContainer = styled.div`
       width: 40%;
       margin-right: 0;
 
-      img {
+      a {
         max-width: 33%;
+      }
+      
+      img {
+        width: 95%;
       }
     }
   }
