@@ -153,8 +153,8 @@ const links: ILink[] = [
 const Navigation: React.FC = () => {
 
     const [showNav, setShowNav] = useState(false)
-    const toggleNav = () => {
-        if (!showNav) {
+    const toggleNav = (toggleScroll = false) => {
+        if (!showNav && toggleScroll) {
             document.body.style.overflow = "hidden"
         } else {
             document.body.style.overflow = "auto"
@@ -174,7 +174,7 @@ const Navigation: React.FC = () => {
                 </LogoContainer>
                 <LinkContainer className="links">
                     {links.map((link, i) =>
-                        <Link to={link.path} key={i} onClick={toggleNav}>
+                        <Link to={link.path} key={i} onClick={() => toggleNav()}>
                             {link.name}
                         </Link>
                     )}
@@ -191,7 +191,7 @@ const Navigation: React.FC = () => {
                     </a>
                 </SocialsContainer>
             </Nav>
-            <NavControlButton onClick={toggleNav} className={buttonClass}>
+            <NavControlButton onClick={() => toggleNav(true)} className={buttonClass}>
                 <img src={gear_icon} alt="menu"/>
             </NavControlButton>
         </>
