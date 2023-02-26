@@ -12,6 +12,13 @@ import ig_icon from "../images/navbar/ig-01.svg"
 // @ts-ignore
 import li_icon from "../images/navbar/li-01.svg"
 
+
+const socialLinks = {
+    facebook: "https://www.facebook.com/BEST.itp",
+    instagram: "https://www.instagram.com/itp_best/",
+    linkedin: "https://www.linkedin.com/company/in%C5%BCynierskie-targi-pracy/",
+}
+
 const Nav = styled.nav`
   background-color: #E5C9AD;
   display: flex;
@@ -39,7 +46,7 @@ const Nav = styled.nav`
       max-width: 0;
       overflow: hidden;
     }
-    
+
     a {
       font-size: 2.5rem;
     }
@@ -83,9 +90,14 @@ const SocialsContainer = styled.div`
   width: 12%;
   margin-right: 1%;
 
+  a {
+    height: 80%;
+  }
+
   img {
     display: block;
-    height: 80%;
+    height: 100%;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -164,9 +176,15 @@ const Navigation: React.FC = () => {
                     )}
                 </LinkContainer>
                 <SocialsContainer>
-                    <img src={fb_icon} alt="facebook"/>
-                    <img src={ig_icon} alt="instagram"/>
-                    <img src={li_icon} alt="linkedin"/>
+                    <a href={socialLinks["facebook"]}>
+                        <img src={fb_icon} alt="facebook"/>
+                    </a>
+                    <a href={socialLinks["instagram"]}>
+                        <img src={ig_icon} alt="instagram"/>
+                    </a>
+                    <a href={socialLinks["linkedin"]}>
+                        <img src={li_icon} alt="linkedin"/>
+                    </a>
                 </SocialsContainer>
             </Nav>
             <NavControlButton onClick={toggleNav} className={buttonClass}>
