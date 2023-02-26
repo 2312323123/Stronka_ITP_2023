@@ -147,7 +147,13 @@ interface ILink {
 
 const links: ILink[] = [
     {name: "Home", path: "/"},
+    {name: "Mapa", path: "/#map"},
     {name: "Sponsorzy", path: "/#sponsors"},
+    {name: "Patroni", path: "/#patrons"},
+    {name: "Partnerzy", path: "/#partners"},
+    {name: "Wyślij CV", path: "https://docs.google.com/forms/d/e/1FAIpQLSc36Pr-ib_wTRvGmZ5Lt8QUBBYu5BdenBO2TvuImyFKWEZxfQ/viewform?usp=sf_link"},
+    {name: "O Beście", path: "https://www.newsite.best.krakow.pl/"},
+
 ]
 
 const Navigation: React.FC = () => {
