@@ -20,24 +20,31 @@ const Container = styled.div`
 
 const MapImg = styled.img`
     position: absolute;
-    top: 22%;
+    top: 18%;
+    @media (max-width: 769px) {
+       width: 95%;
+       top: 25%;
+    }
 `
 
 const MapBox = styled.div`
-  width: 70%;
+  width: 80%;
   height: 60%;
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 20%;
-  background-color: #cd5d29;
+  background-color: #e9d8cc;
   align-items: center;
   display: flex;
-  justify-content:center;
+  justify-content: center;
+  border 0.1rem solid;
+  border-radius 10rem;
   @media (max-width: 769px) {
-    background-color: rgba(0,0,0,0); 
-    width: 83%;
-    top: 10%;
-    left: 10%;
+    width: 92%;
+    height 27%;
+    top: 16%;
+    left: 4%;
+    border-radius 1rem;
   };
 `
 
