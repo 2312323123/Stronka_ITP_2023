@@ -20,7 +20,7 @@ const config: GatsbyConfig = {
         ],
         web: [
           {
-            name: `Open Sans`,
+            name: `Unica One`,
             file: `https://fonts.googleapis.com/css2?family=Unica+One&display=swap`,
           },
         ],
