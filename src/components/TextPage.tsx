@@ -17,12 +17,12 @@ const Container = styled.div`
 
 const TextBox1 = styled.div`
   width: 38%;
-  height: 10%;
+  height: 12%;
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 4%;
   background-color: #e8d9cb;
-  font-size: 1vw;
+  font-size: 1.3vw;
   color: #d2764a;
   border: 0.15rem solid;
   padding: 0.3rem;
@@ -34,26 +34,17 @@ const TextBox1 = styled.div`
     width: 80%;
     left: 10%;
     top: 7%;
-    height: 6%;
-    font-size: 2.5vw;
+    height: 8%;
+    font-size: 3vw;
   };
-`
-
-const Hyperlink = styled.a`
-  font-size: 1vw;
-  color: #d2764a;
-  font-weight: 800;
-  @media (max-width: 768px) {
-    font-size: 2.5vw;
-  }
 `
 
 const TextBox2 = styled(TextBox1)`
   height: 5%;
-  top: 34%;
+  top: 33%;
   @media (max-width: 768px) {
     height: 4%;
-    top:15.5%;
+    top:19%;
   }
 `
 
@@ -68,10 +59,11 @@ const TextBox3 = styled(TextBox1)`
 `
 
 const TextBox4 = styled(TextBox3)`
-  top: 68%;
+  top: 69%;
+  height: 6.5%;
   @media (max-width: 768px) {
-    height: 9.5%;
-    top: 84.5%;
+    height: 6%;
+    top: 86%;
     left: 10%;
   }
 `
@@ -86,27 +78,18 @@ const TextPage: React.FC = () => {
                     <Img src={img2_desktop} alt="text page"/>
                 </picture>
                 <TextBox1>
-                    W dniach xx-xx marca w godzinach xx na parkingu stadionu Wisły Kraków od strony ul. Reymonta, 
-                    będzie możliwość oddania szpiku kostnego w mobilnym punkcie, który należy do Fundacji DKMS. 
-                    Jest to idealna okazja dla osób, które lubią pomagać, aby połączyć przyjemne z pożytecznym.
+                  Inżynierskie Targi Pracy organizowane przez Stowarzyszenie Studentów BEST AGH Kraków to projekt, który już od 25 lat łączy środowisko akademickie i biznesowe. 
+                  Naszym celem jest zapewnienie wszystkim uczestnikom Targów, jak największej jakości wydarzenia oraz pełnej satysfakcji. 
                 </TextBox1>
                 <TextBox2>
-                    Szczegółowe informacje dotyczące przygotowania się do oddania szpiku znajdziecie 
-                    na <Hyperlink href='https://www.dkms.pl'>stronie DMKS</Hyperlink> oraz
-                    naszym  <Hyperlink href="https://www.facebook.com/BEST.itp">Fanpage'u</Hyperlink> .
+                  Aby to zrealizować, w tym roku zaprosiliśmy 50 firm, które są wiodącymi markami w swoich branżach.
                 </TextBox2>
                 <TextBox3>
-                    Inżynierskie Targi Pracy organizowane przez Stowarzyszenie Studentów BEST AGH Kraków to projekt,
-                    który już od 25 lat łączy środowisko akademickie i biznesowe. Naszym celem jest zapewnienie wszystkim 
-                    uczestnikom Targów, jak największej jakości wydarzenia oraz pełnej satysfakcji. 
-                    Aby to zrealizować, w tym roku zaprosiliśmy 50 firm, które są wiodącymi markami w swoich branżach.
+                  W dniu 8 marca spotkają się pracodawcy szukający idealnych pracowników oraz studenci starający się o wymarzoną pracę lub staż.
+                  Na naszej stronie internetowej znajdziecie informacje nie tylko o naszych wystawcach i ich ofertach pracy, ale także o konkursach oraz warsztatach.
                 </TextBox3>
                 <TextBox4>
-                    W dniu 8 marca spotkają się pracodawcy szukający idealnych pracowników oraz 
-                    studenci starający się o wymarzoną pracę lub staż. Na naszej stronie internetowej znajdziecie 
-                    informacje nie tylko o naszych wystawcach i ich ofertach pracy, ale także o konkursach oraz warsztatach.
-                    Istnieje również możliwość przesłania swojego CV do naszej bazy,
-                    dzięki której nasi wystawcy poznają Was jeszcze lepiej pod kątem waszego doświadczenia i umiejętności.
+                  Istnieje również możliwość przesłania swojego CV do naszej bazy, dzięki której nasi wystawcy poznają Was jeszcze lepiej pod kątem waszego doświadczenia i umiejętności.
                 </TextBox4>
             </Container>
         </>

@@ -291,6 +291,7 @@ const Sponsors: React.FC = () => {
 
         <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
         <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
+        <MediaTitle> PARTNERZY <br/> MEDIALNI </MediaTitle>
 
         <ImgMobile src={imagesMobile[3].default} alt="img4"/>
         <ImgMobile src={imagesMobile[4].default} alt="img5"/>
