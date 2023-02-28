@@ -16,11 +16,11 @@
     Użyte technologie
   </h2>
   <ul>
-    <li>React.js - framework na którym oparta jest aplikacja</li>
-    <li>Typescript - umożliwia statyczne typowanie</li>
-    <li>Gatsby - pozwala na renderowanie po stronie serwera </li>
-    <li>Sass - rozszerzenie języka CSS </li>
-    <li>styled components - wykorzystywane do stylizacji poszczególnych komponentów</li>
+    <li>React.js</li>
+    <li>Typescript</li>
+    <li>Gatsby</li>
+    <li>Sass</li>
+    <li>styled components</li>
   </ul>
 </p>
 
@@ -38,7 +38,7 @@
  <h2>
   Autorzy
  </h2>
- Projektant layoutu:<br>
+ Designer:<br>
  <ul>
   <li>Piotr Baran</li>
  </ul>
