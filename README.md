@@ -1,49 +1,51 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+<p>
+  <h1 align="center">
+  Strona internetowa XXV Inżynierskich Targów Pracy
+  </h1>
 </p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
 
-## 🚀 Quick start
+<p>
+  <h2>
+  Informacje ogólne
+  </h2>
+  Projekt ten to strona internetowa stworzona na potrzeby XXV Inżynierskich Targów Pracy organizowanych przez BEST AGH Kraków. 
+</p>
 
-1.  **Create a Gatsby site.**
+<p> 
+  <h2>
+    Użyte technologie
+  </h2>
+  <ul>
+    <li>React.js - framework na którym oparta jest aplikacja</li>
+    <li>Typescript - umożliwia statyczne typowanie</li>
+    <li>Gatsby - pozwala na renderowanie po stronie serwera </li>
+    <li>Sass - rozszerzenie języka CSS </li>
+    <li>styled components - wykorzystywane do stylizacji poszczególnych komponentów</li>
+  </ul>
+</p>
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+<p>
+  <h2>
+    Uruchomienie aplikacji
+  </h2>
+  Nasza aplikacja jest dostępna pod adresem <a href="https://itp.best.krakow.pl">itp.best.krakow.pl </a>. 
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+  Aby uruchumić kod lokalnie należy zainastalować dependecje poprzez `npm install` lub `yarn install`. <br>
+  Następnie w terminalu wywołaj komendę `npm start`.
+</p>
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+<p>
+ <h2>
+  Autorzy
+ </h2>
+ Projektant layoutu:<br>
+ <ul>
+  <li>Piotr Baran</li>
+ </ul>
+ Deweloperzy:
+ <ul>
+  <li>Maciej Piotrowski</li>
+  <li>Paweł Zaręba</li>
+  <li>Konrad Krzemiński</li>
+ <ul>
+</p>
