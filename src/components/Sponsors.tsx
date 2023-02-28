@@ -296,6 +296,7 @@ const Sponsors: React.FC = () => {
 
                 <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
                 <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
+                <MediaTitle> PARTNERZY <br/> MEDIALNI </MediaTitle>
               </>
           }
 
@@ -333,22 +334,22 @@ const Sponsors: React.FC = () => {
               target="_blank"
           >
             <SponsorImg src={logos[5].default} alt="Motorola"/>
-        </Motorola>
+          </Motorola>
 
-        <Autodesk href="https://www.autodesk.com/" target="_blank">
-          <SponsorImg src={logos[6].default} alt="Autodesk" />
-        </Autodesk>
+          <Autodesk href="https://www.autodesk.com/" target="_blank">
+            <SponsorImg src={logos[6].default} alt="Autodesk"/>
+          </Autodesk>
 
-        <GE href="https://www.ge.com/" target="_blank">
-          <SponsorImg src={logos[7].default} alt="GE" />
-        </GE>
+          <GE href="https://www.ge.com/" target="_blank">
+            <SponsorImg src={logos[7].default} alt="GE"/>
+          </GE>
 
-        <Adecco href="https://www.adecco.pl/" target="_blank">
-          <SponsorImg src={logos[8].default} alt="Adecco" />
-        </Adecco>
+          <Adecco href="https://www.adecco.pl/" target="_blank">
+            <SponsorImg src={logos[8].default} alt="Adecco"/>
+          </Adecco>
 
-        <Eska href="https://www.eska.pl/" target="_blank">
-          <SponsorImg src={logos[9].default} alt="Eska" />
+          <Eska href="https://www.eska.pl/" target="_blank">
+            <SponsorImg src={logos[9].default} alt="Eska"/>
         </Eska>
 
         <PodajDalej href="https://podajdalej.pl/" target="_blank">
