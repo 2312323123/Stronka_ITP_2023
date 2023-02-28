@@ -1,0 +1,10 @@
+FROM node:18-alpine AS dev
+
+WORKDIR /app
+COPY . .
+
+RUN apk add g++ make py3-pip
+
+RUN yarn
+#RUN yarn add gatsby@next --legacy-peer-deps
+CMD ["yarn", "develop", "-H", "0.0.0.0"]
