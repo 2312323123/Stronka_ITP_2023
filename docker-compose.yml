@@ -1,0 +1,10 @@
+version: '1'
+services:
+  app:
+    image: stronka_itp:prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: deploy
+    ports:
+      - 80:80

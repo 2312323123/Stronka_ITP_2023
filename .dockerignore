@@ -1,0 +1,7 @@
+.git
+node_modules
+.git*
+.cache
+Dockerfile*
+docker-compose.yml
+public
