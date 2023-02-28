@@ -41,14 +41,18 @@ const Nav = styled.nav`
     position: fixed;
     transition: max-width .5s ease-in-out;
     font-size: xx-large;
+    overflow: hidden;
 
     &.hidden {
       max-width: 0;
-      overflow: hidden;
     }
 
     a {
       font-size: 2.5rem;
+    }
+    
+    .links{
+      min-width: 100vw;
     }
   }
 `
@@ -103,7 +107,7 @@ const SocialsContainer = styled.div`
   @media (max-width: 768px) {
     & {
       height: 15%;
-      width: 40%;
+      min-width: 40vw;
       margin-right: 0;
 
       a {

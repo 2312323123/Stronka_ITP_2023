@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import useMediaQuery from "../utils/UseMediaQuery";
 
 function importAll(r: any) {
   return r.keys().map(r)
@@ -277,99 +278,96 @@ const MediaTitle = styled(TitleName)`
 `
 
 const Sponsors: React.FC = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+  console.log(isMobile)
   return (
-    <div id="sponsors">
-      <Container>
-        <ImgDesktop src={imagesDesktop[3].default} alt="img4"/>
-        <ImgDesktop src={imagesDesktop[4].default} alt="img5"/>
-        <ImgDesktop id="partners" src={imagesDesktop[5].default} alt="img6"/>
-        <ImgDesktop id="patrons" src={imagesDesktop[6].default} alt="img7"/>
-        <Crane src={imagesDesktop[8].default} alt="crane"/>
+      <div id="sponsors">
+        <Container>
+          {!isMobile &&
+              <>
+                <ImgDesktop src={imagesDesktop[3].default} alt="img4"/>
+                <ImgDesktop src={imagesDesktop[4].default} alt="img5"/>
+                <ImgDesktop id="partners" src={imagesDesktop[5].default} alt="img6"/>
+                <ImgDesktop id="patrons" src={imagesDesktop[6].default} alt="img7"/>
+                <Crane src={imagesDesktop[8].default} alt="crane"/>
 
-        <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
-        <SponsorsTitle>SPONSORZY</SponsorsTitle>
+                <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
+                <SponsorsTitle>SPONSORZY</SponsorsTitle>
 
-        <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
-        <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
-        <MediaTitle> PARTNERZY <br/> MEDIALNI </MediaTitle>
+                <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
+                <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
+                <MediaTitle> PARTNERZY <br/> MEDIALNI </MediaTitle>
+              </>
+          }
 
-        <ImgMobile src={imagesMobile[3].default} alt="img4"/>
-        <ImgMobile src={imagesMobile[4].default} alt="img5"/>
+          {
+              isMobile &&
+              <>
+                <ImgMobile src={imagesMobile[3].default} alt="img4"/>
+                <ImgMobile id="partners patrons" src={imagesMobile[4].default} alt="img5"/>
+              </>
+          }
 
-        {/* Sabre */}
-        <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
-          <SponsorImg src={logos[0].default} alt="Sabre"/>
-        </Sabre>
 
-        {/* Woodward */}
-        <Woodward href="https://www.woodward.com/" target="_blank">
-          <SponsorImg src={logos[1].default} alt="Woodward" />
-        </Woodward>
+          <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
+            <SponsorImg src={logos[0].default} alt="Sabre"/>
+          </Sabre>
 
-        {/* Pega */}
-        <Pega href="https://www.pega.com/" target="_blank">
-          <SponsorImg src={logos[2].default} alt="Pega" />
-        </Pega>
+          <Woodward href="https://www.woodward.com/" target="_blank">
+            <SponsorImg src={logos[1].default} alt="Woodward"/>
+          </Woodward>
 
-        {/* Mars */}
-        <Mars href="https://www.mars.com/" target="_blank">
-          <SponsorImg src={logos[3].default} alt="Mars" />
-        </Mars>
+          <Pega href="https://www.pega.com/" target="_blank">
+            <SponsorImg src={logos[2].default} alt="Pega"/>
+          </Pega>
 
-        {/* Aptiv */}
-        <Aptiv href="https://www.aptiv.com/" target="_blank">
-          <SponsorImg src={logos[4].default} alt="Aptiv" />
-        </Aptiv>
+          <Mars href="https://www.mars.com/" target="_blank">
+            <SponsorImg src={logos[3].default} alt="Mars"/>
+          </Mars>
 
-        {/* Motorola */}
-        <Motorola
-          href="https://www.motorolasolutions.com/en_us/home.html"
-          target="_blank"
-        >
-          <SponsorImg src={logos[5].default} alt="Motorola" />
-        </Motorola>
+          <Aptiv href="https://www.aptiv.com/" target="_blank">
+            <SponsorImg src={logos[4].default} alt="Aptiv"/>
+          </Aptiv>
 
-        {/* Autodesk */}
-        <Autodesk href="https://www.autodesk.com/" target="_blank">
-          <SponsorImg src={logos[6].default} alt="Autodesk" />
-        </Autodesk>
+          <Motorola
+              href="https://www.motorolasolutions.com/en_us/home.html"
+              target="_blank"
+          >
+            <SponsorImg src={logos[5].default} alt="Motorola"/>
+          </Motorola>
 
-        {/* GE */}
-        <GE href="https://www.ge.com/" target="_blank">
-          <SponsorImg src={logos[7].default} alt="GE" />
-        </GE>
+          <Autodesk href="https://www.autodesk.com/" target="_blank">
+            <SponsorImg src={logos[6].default} alt="Autodesk"/>
+          </Autodesk>
 
-        {/* Adecco */}
-        <Adecco href="https://www.adecco.pl/" target="_blank">
-          <SponsorImg src={logos[8].default} alt="Adecco" />
-        </Adecco>
+          <GE href="https://www.ge.com/" target="_blank">
+            <SponsorImg src={logos[7].default} alt="GE"/>
+          </GE>
 
-        {/* Eska */}
-        <Eska href="https://www.eska.pl/" target="_blank">
-          <SponsorImg src={logos[9].default} alt="Eska" />
+          <Adecco href="https://www.adecco.pl/" target="_blank">
+            <SponsorImg src={logos[8].default} alt="Adecco"/>
+          </Adecco>
+
+          <Eska href="https://www.eska.pl/" target="_blank">
+            <SponsorImg src={logos[9].default} alt="Eska"/>
         </Eska>
 
-        {/* Podaj Dalej */}
         <PodajDalej href="https://podajdalej.pl/" target="_blank">
           <SponsorImg src={logos[10].default} alt="Podaj Dalej" />
         </PodajDalej>
 
-        {/* Dla Studenta */}
         <DlaStudenta href="https://www.dlastudenta.pl/" target="_blank">
           <SponsorImg src={logos[11].default} alt="Dla Studenta" />
         </DlaStudenta>
 
-        {/* Eurostudent */}
         <Eurostudent href="https://eurostudent.pl/" target="_blank">
           <SponsorImg src={logos[12].default} alt="Eurostudent" />
         </Eurostudent>
 
-        {/* KMS */}
         <KMS href="https://kms.org.pl/" target="_blank">
           <SponsorImg src={logos[13].default} alt="KMS" />
         </KMS>
 
-        {/* FXMAG */}
         <FXMAG href="https://fxmag.pl/" target="_blank">
           <SponsorImg src={logos[14].default} alt="FXMAG" />
         </FXMAG>
