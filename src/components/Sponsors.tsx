@@ -142,11 +142,11 @@ const Autodesk = styled.a`
 const GE = styled.a`
   width: 15%;
   position: absolute;
-  right: 65.7%;
+  right: 74%;
   top: 65.4%;
   @media (max-width: 768px) {
-    right: 66%;
-    top: 65.8%;
+    right: 71.5%;
+    top: 65.9%;
     width: 24%;
   } ;
 `
@@ -154,12 +154,22 @@ const GE = styled.a`
 const Adecco = styled.a`
   width: 12%;
   position: absolute;
-  right: 21%;
+  right: 43.7%;
   top: 65.3%;
   @media (max-width: 768px) {
-    right: 10.8%;
+    right: 38.8%;
     top: 65.6%;
     width: 22%;
+  } ;
+`
+
+const Fujijama = styled(Adecco)`
+  right: 12.5%;
+  top: 65.5%;
+  @media (max-width: 768px) {
+    right: 7.1%;
+    top: 66%;
+    width: 19%;
   } ;
 `
 
@@ -261,14 +271,18 @@ const SponsorsTitle = styled(TitleName)`
 `
 
 const StudentPartner = styled(TitleName)`
-  left: 17.7%;
+  left: 9.7%;
   top: 56%;
   font-size: 2.7vw;
   height: 4%;
 `
 
 const ContentPartner = styled(StudentPartner)`
-  left: 64%;
+  left: 41%;
+`
+
+const TechnicalPartner = styled(StudentPartner)`
+  left: 72%;
 `
 
 const MediaTitle = styled(TitleName)`
@@ -291,6 +305,7 @@ const Sponsors: React.FC = () => {
 
         <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
         <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
+        <TechnicalPartner> PARTNER <br/> TECHNICZNY </TechnicalPartner>
         <MediaTitle> PARTNERZY <br/> MEDIALNI </MediaTitle>
 
         <ImgMobile src={imagesMobile[3].default} alt="img4"/>
@@ -343,6 +358,11 @@ const Sponsors: React.FC = () => {
         <Adecco href="https://www.adecco.pl/" target="_blank">
           <SponsorImg src={logos[8].default} alt="Adecco" />
         </Adecco>
+
+        {/* Fujijama */}
+        <Fujijama href="https://www.fujijama.pl/" target="_blank">
+          <SponsorImg src={logos[15].default} alt="Adecco" />
+        </Fujijama>
 
         {/* Eska */}
         <Eska href="https://www.eska.pl/" target="_blank">

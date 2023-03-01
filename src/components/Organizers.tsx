@@ -52,10 +52,6 @@ const TextBoxMateusz = styled(TextBox) `
   left: 72.9%;
 `
 
-
-
-
-
 const Organizers: React.FC = () => {
     return(
         <>
