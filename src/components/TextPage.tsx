@@ -1,9 +1,10 @@
 import React from 'react';
 //@ts-ignore
-import img2_desktop from '../images/DesktopBackgrounds/2.jpg';
+import img2_desktop from '../images/desktop_backgrounds/2.jpg';
 //@ts-ignore
-import img2_mobile from '../images/MobileBackgrounds/2.jpg';
+import img2_mobile from '../images/mobile_backgrounds/2.jpg';
 import styled from "styled-components";
+
 const Img = styled.img`
   width: 100%;
   height: 100%;

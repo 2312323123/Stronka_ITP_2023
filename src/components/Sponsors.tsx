@@ -7,13 +7,13 @@ function importAll(r: any) {
 }
 
 const imagesDesktop = importAll(
-  require.context('../images/DesktopBackgrounds', false, /\.(png|jpe?g|svg)$/)
+  require.context('../images/desktop_backgrounds', false, /\.(png|jpe?g|svg)$/)
 )
 const imagesMobile = importAll(
-  require.context('../images/MobileBackgrounds', false, /\.(png|jpe?g|svg)$/)
+  require.context('../images/mobile_backgrounds', false, /\.(png|jpe?g|svg)$/)
 )
 const logos = importAll(
-  require.context('../images/Logos', false, /\.(png|jpe?g|svg)$/)
+  require.context('../images/logos', false, /\.(png|jpe?g|svg)$/)
 )
 
 const Container = styled.div`
