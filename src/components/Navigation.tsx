@@ -157,7 +157,7 @@ const links: ILink[] = [
     {name: "Partnerzy", path: "/#partners"},
     {name: "Wyślij CV", path: "https://docs.google.com/forms/d/e/1FAIpQLSc36Pr-ib_wTRvGmZ5Lt8QUBBYu5BdenBO2TvuImyFKWEZxfQ/viewform?usp=sf_link"},
     {name: "O Beście", path: "https://www.newsite.best.krakow.pl/"},
-
+    {name: "Regulamin", path: "https://itp.best.krakow.pl/ITP2023-Regulamin.pdf"},
 ]
 
 const Navigation: React.FC = () => {

@@ -1,9 +1,9 @@
 
 import React from 'react';
 //@ts-ignore
-import img8_desktop from '../images/DesktopBackgrounds/8.svg';
+import img8_desktop from '../images/desktop_backgrounds/8.svg';
 //@ts-ignore
-import img6_mobile from '../images/MobileBackgrounds/6.jpg';
+import img6_mobile from '../images/mobile_backgrounds/6.jpg';
 import styled from "styled-components";
 const Img = styled.img`
   width: 100%;
@@ -51,10 +51,6 @@ const TextBoxPaulina = styled(TextBox) `
 const TextBoxMateusz = styled(TextBox) `
   left: 72.9%;
 `
-
-
-
-
 
 const Organizers: React.FC = () => {
     return(
