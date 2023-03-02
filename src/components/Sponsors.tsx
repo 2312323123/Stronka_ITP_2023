@@ -1,25 +1,25 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 import useMediaQuery from "../utils/UseMediaQuery";
 
 function importAll(r: any) {
-  return r.keys().map(r)
+  return r.keys().map(r);
 }
 
 const imagesDesktop = importAll(
-  require.context('../images/desktop_backgrounds', false, /\.(png|jpe?g|svg)$/)
-)
+  require.context("../images/desktop_backgrounds", false, /\.(png|jpe?g|svg)$/)
+);
 const imagesMobile = importAll(
-  require.context('../images/mobile_backgrounds', false, /\.(png|jpe?g|svg)$/)
-)
+  require.context("../images/mobile_backgrounds", false, /\.(png|jpe?g|svg)$/)
+);
 const logos = importAll(
-  require.context('../images/logos', false, /\.(png|jpe?g|svg)$/)
-)
+  require.context("../images/logos", false, /\.(png|jpe?g|svg)$/)
+);
 
 const Container = styled.div`
   position: relative;
   display: grid;
-`
+`;
 
 const ImgDesktop = styled.img`
   width: 100%;
@@ -28,7 +28,7 @@ const ImgDesktop = styled.img`
   @media (max-width: 768px) {
     display: none;
   } ;
-`
+`;
 
 const ImgMobile = styled.img`
   width: 100%;
@@ -37,7 +37,7 @@ const ImgMobile = styled.img`
   @media (min-width: 769px) {
     display: none;
   } ;
-`
+`;
 
 const Crane = styled.img`
   width: 30%;
@@ -47,7 +47,7 @@ const Crane = styled.img`
   @media (max-width: 768px) {
     display: none;
   } ;
-`
+`;
 
 const SponsorImg = styled.img`
   width: 100%;
@@ -58,7 +58,7 @@ const SponsorImg = styled.img`
     padding: 1.5rem;
     transform: translate(-1.5rem, -1.5rem);
   } ;
-`
+`;
 
 const Sabre = styled.a`
   width: 20%;
@@ -70,7 +70,7 @@ const Sabre = styled.a`
     top: 3.5%;
     width: 38%;
   } ;
-`
+`;
 
 const Woodward = styled.a`
   width: 20%;
@@ -82,7 +82,7 @@ const Woodward = styled.a`
     left: 7%;
     width: 30%;
   } ;
-`
+`;
 const Pega = styled.a`
   width: 9%;
   position: absolute;
@@ -93,7 +93,7 @@ const Pega = styled.a`
     top: 31%;
     width: 17%;
   } ;
-`
+`;
 const Mars = styled.a`
   width: 11%;
   position: absolute;
@@ -104,7 +104,7 @@ const Mars = styled.a`
     top: 39.4%;
     width: 23%;
   } ;
-`
+`;
 const Aptiv = styled.a`
   width: 16%;
   position: absolute;
@@ -115,7 +115,7 @@ const Aptiv = styled.a`
     top: 48.4%;
     width: 27%;
   } ;
-`
+`;
 const Motorola = styled.a`
   width: 9%;
   position: absolute;
@@ -126,7 +126,7 @@ const Motorola = styled.a`
     top: 38.5%;
     width: 16%;
   } ;
-`
+`;
 
 const Autodesk = styled.a`
   width: 18.8%;
@@ -138,7 +138,7 @@ const Autodesk = styled.a`
     top: 48.5%;
     width: 32%;
   } ;
-`
+`;
 
 const GE = styled.a`
   width: 15%;
@@ -150,7 +150,7 @@ const GE = styled.a`
     top: 65.9%;
     width: 24%;
   } ;
-`
+`;
 
 const Adecco = styled.a`
   width: 12%;
@@ -162,7 +162,7 @@ const Adecco = styled.a`
     top: 65.6%;
     width: 22%;
   } ;
-`
+`;
 
 const Fujijama = styled(Adecco)`
   right: 12.5%;
@@ -172,7 +172,7 @@ const Fujijama = styled(Adecco)`
     top: 66%;
     width: 19%;
   } ;
-`
+`;
 
 const Eska = styled.a`
   width: 12%;
@@ -184,7 +184,7 @@ const Eska = styled.a`
     top: 80.5%;
     width: 28%;
   } ;
-`
+`;
 
 const PodajDalej = styled.a`
   width: 10%;
@@ -196,7 +196,7 @@ const PodajDalej = styled.a`
     top: 96.2%;
     width: 20%;
   } ;
-`
+`;
 
 const DlaStudenta = styled.a`
   width: 11%;
@@ -208,7 +208,7 @@ const DlaStudenta = styled.a`
     top: 80.8%;
     width: 22%;
   } ;
-`
+`;
 
 const Eurostudent = styled.a`
   width: 14%;
@@ -220,7 +220,7 @@ const Eurostudent = styled.a`
     top: 88.5%;
     width: 30%;
   } ;
-`
+`;
 
 const KMS = styled.a`
   width: 13%;
@@ -232,7 +232,7 @@ const KMS = styled.a`
     top: 96.3%;
     width: 25%;
   } ;
-`
+`;
 
 const FXMAG = styled.a`
   width: 5%;
@@ -244,7 +244,7 @@ const FXMAG = styled.a`
     top: 88.6%;
     width: 11%;
   } ;
-`
+`;
 
 const TitleName = styled.div`
   position: absolute;
@@ -256,143 +256,163 @@ const TitleName = styled.div`
   text-align: center;
   align-items: center;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   @media (max-width: 768px) {
     display: none;
-  };
-`
+  } ;
+`;
 
 const MainSponsorTitle = styled(TitleName)`
   left: 43%;
   top: 5.7%;
-`
+`;
 const SponsorsTitle = styled(TitleName)`
   left: 41%;
   top: 28.4%;
-`
+`;
 
 const StudentPartner = styled(TitleName)`
   left: 9.7%;
   top: 56%;
   font-size: 2.7vw;
   height: 4%;
-`
+`;
 
 const ContentPartner = styled(StudentPartner)`
   left: 41%;
-`
+`;
 
 const TechnicalPartner = styled(StudentPartner)`
   left: 72%;
-`
+`;
 
 const MediaTitle = styled(TitleName)`
   left: 41%;
   top: 78.2%;
-`
+`;
 
 const Sponsors: React.FC = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)")
-  console.log(isMobile)
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  console.log(isMobile);
   return (
-      <div id="sponsors">
-        <Container>
-          {!isMobile &&
-              <>
-                <ImgDesktop src={imagesDesktop[3].default} alt="img4"/>
-                <ImgDesktop src={imagesDesktop[4].default} alt="img5"/>
-                <ImgDesktop id="partners" src={imagesDesktop[5].default} alt="img6"/>
-                <ImgDesktop id="patrons" src={imagesDesktop[6].default} alt="img7"/>
-                <Crane src={imagesDesktop[8].default} alt="crane"/>
+    <div id="sponsors">
+      <Container>
+        {!isMobile && (
+          <>
+            <ImgDesktop src={imagesDesktop[3].default} alt="img4" />
+            <ImgDesktop src={imagesDesktop[4].default} alt="img5" />
+            <ImgDesktop
+              id="partners"
+              src={imagesDesktop[5].default}
+              alt="img6"
+            />
+            <ImgDesktop
+              id="patrons"
+              src={imagesDesktop[6].default}
+              alt="img7"
+            />
+            <Crane src={imagesDesktop[8].default} alt="crane" />
 
-                <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
-                <SponsorsTitle>SPONSORZY</SponsorsTitle>
+            <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
+            <SponsorsTitle>SPONSORZY</SponsorsTitle>
 
-                <StudentPartner>PARTNER <br/> STREFY <br/> STUDENTA</StudentPartner>
-                <ContentPartner>PARTNER <br/> MERYTORYCZNY </ContentPartner>
-                <TechnicalPartner> PARTNER <br/> TECHNICZNY </TechnicalPartner>
-                <MediaTitle> PARTNERZY <br/> MEDIALNI </MediaTitle>
-              </>
-          }
+            <StudentPartner>
+              PARTNER <br /> STREFY <br /> STUDENTA
+            </StudentPartner>
+            <ContentPartner>
+              PARTNER <br /> MERYTORYCZNY{" "}
+            </ContentPartner>
+            <TechnicalPartner>
+              {" "}
+              PARTNER <br /> TECHNICZNY{" "}
+            </TechnicalPartner>
+            <MediaTitle>
+              {" "}
+              PARTNERZY <br /> MEDIALNI{" "}
+            </MediaTitle>
+          </>
+        )}
 
-          {
-              isMobile &&
-              <>
-                <ImgMobile src={imagesMobile[3].default} alt="img4"/>
-                <ImgMobile id="partners patrons" src={imagesMobile[4].default} alt="img5"/>
-              </>
-          }
+        {isMobile && (
+          <>
+            <ImgMobile src={imagesMobile[3].default} alt="img4" />
+            <ImgMobile
+              id="partners patrons"
+              src={imagesMobile[4].default}
+              alt="img5"
+            />
+          </>
+        )}
 
+        <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
+          <SponsorImg src={logos[0].default} alt="Sabre" />
+        </Sabre>
 
-          <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
-            <SponsorImg src={logos[0].default} alt="Sabre"/>
-          </Sabre>
+        <Woodward href="https://www.woodward.com/" target="_blank">
+          <SponsorImg src={logos[1].default} alt="Woodward" />
+        </Woodward>
 
-          <Woodward href="https://www.woodward.com/" target="_blank">
-            <SponsorImg src={logos[1].default} alt="Woodward"/>
-          </Woodward>
+        <Pega href="https://www.pega.com/" target="_blank">
+          <SponsorImg src={logos[2].default} alt="Pega" />
+        </Pega>
 
-          <Pega href="https://www.pega.com/" target="_blank">
-            <SponsorImg src={logos[2].default} alt="Pega"/>
-          </Pega>
+        <Mars href="https://www.mars.com/" target="_blank">
+          <SponsorImg src={logos[3].default} alt="Mars" />
+        </Mars>
 
-          <Mars href="https://www.mars.com/" target="_blank">
-            <SponsorImg src={logos[3].default} alt="Mars"/>
-          </Mars>
+        <Aptiv href="https://www.aptiv.com/" target="_blank">
+          <SponsorImg src={logos[4].default} alt="Aptiv" />
+        </Aptiv>
 
-          <Aptiv href="https://www.aptiv.com/" target="_blank">
-            <SponsorImg src={logos[4].default} alt="Aptiv"/>
-          </Aptiv>
+        <Motorola
+          href="https://www.motorolasolutions.com/en_us/home.html"
+          target="_blank"
+        >
+          <SponsorImg src={logos[5].default} alt="Motorola" />
+        </Motorola>
 
-          <Motorola
-              href="https://www.motorolasolutions.com/en_us/home.html"
-              target="_blank"
-          >
-            <SponsorImg src={logos[5].default} alt="Motorola"/>
-          </Motorola>
+        <Autodesk href="https://www.autodesk.com/" target="_blank">
+          <SponsorImg src={logos[6].default} alt="Autodesk" />
+        </Autodesk>
 
-          <Autodesk href="https://www.autodesk.com/" target="_blank">
-            <SponsorImg src={logos[6].default} alt="Autodesk"/>
-          </Autodesk>
+        <GE href="https://www.ge.com/" target="_blank">
+          <SponsorImg src={logos[7].default} alt="GE" />
+        </GE>
 
-          <GE href="https://www.ge.com/" target="_blank">
-            <SponsorImg src={logos[7].default} alt="GE"/>
-          </GE>
+        <Adecco href="https://www.adecco.pl/" target="_blank">
+          <SponsorImg src={logos[8].default} alt="Adecco" />
+        </Adecco>
 
-          <Adecco href="https://www.adecco.pl/" target="_blank">
-            <SponsorImg src={logos[8].default} alt="Adecco"/>
-          </Adecco>
+        <Fujijama href="https://www.fujijama.pl/" target="_blank">
+          <SponsorImg src={logos[15].default} alt="Fujijama" />
+        </Fujijama>
 
-          <Fujijama href="https://www.fujijama.pl/" target="_blank">
-            <SponsorImg src={logos[15].default} alt="Fujijama" />
-          </Fujijama>
+        <Eska href="https://www.eska.pl/" target="_blank">
+          <SponsorImg src={logos[9].default} alt="Eska" />
+        </Eska>
 
-          <Eska href="https://www.eska.pl/" target="_blank">
-            <SponsorImg src={logos[9].default} alt="Eska"/>
-          </Eska>
+        <PodajDalej href="http://www.podajdalej.info.pl/" target="_blank">
+          <SponsorImg src={logos[10].default} alt="Podaj Dalej" />
+        </PodajDalej>
 
-          <PodajDalej href="https://podajdalej.pl/" target="_blank">
-            <SponsorImg src={logos[10].default} alt="Podaj Dalej" />
-          </PodajDalej>
+        <DlaStudenta href="https://www.dlastudenta.pl/" target="_blank">
+          <SponsorImg src={logos[11].default} alt="Dla Studenta" />
+        </DlaStudenta>
 
-          <DlaStudenta href="https://www.dlastudenta.pl/" target="_blank">
-            <SponsorImg src={logos[11].default} alt="Dla Studenta" />
-          </DlaStudenta>
+        <Eurostudent href="https://eurostudent.pl/" target="_blank">
+          <SponsorImg src={logos[12].default} alt="Eurostudent" />
+        </Eurostudent>
 
-          <Eurostudent href="https://eurostudent.pl/" target="_blank">
-            <SponsorImg src={logos[12].default} alt="Eurostudent" />
-          </Eurostudent>
+        <KMS href="https://kms.org.pl/" target="_blank">
+          <SponsorImg src={logos[13].default} alt="KMS" />
+        </KMS>
 
-          <KMS href="https://kms.org.pl/" target="_blank">
-            <SponsorImg src={logos[13].default} alt="KMS" />
-          </KMS>
-
-          <FXMAG href="https://fxmag.pl/" target="_blank">
-            <SponsorImg src={logos[14].default} alt="FXMAG" />
-          </FXMAG>
+        <FXMAG href="https://fxmag.pl/" target="_blank">
+          <SponsorImg src={logos[14].default} alt="FXMAG" />
+        </FXMAG>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Sponsors
+export default Sponsors;

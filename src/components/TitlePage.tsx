@@ -1,14 +1,14 @@
 // component body in typescript
-import React from 'react'
+import React from "react";
 // @ts-ignore
-import BEST_logo from '../images/landing_page/BEST_logo.png'
+import BEST_logo from "../images/landing_page/BEST_logo.png";
 // @ts-ignore
-import ITP_logo from '../images/landing_page/ITP_logo.png'
+import ITP_logo from "../images/landing_page/ITP_logo.png";
 // @ts-ignore
-import tlo_pc_1 from '../images/landing_page/1.svg'
-import styled from 'styled-components'
+import tlo_pc_1 from "../images/landing_page/1.svg";
+import styled from "styled-components";
 
-import Wave from './Wave'
+import Wave from "./Wave";
 
 const Section = styled.section`
   width: 100%;
@@ -21,7 +21,7 @@ const Section = styled.section`
   @media (min-width: 768px) {
     height: calc(100vh - 6vh - 1em);
   }
-`
+`;
 
 const BESTLogo = styled.img`
   position: absolute;
@@ -34,7 +34,7 @@ const BESTLogo = styled.img`
     margin-top: 2vh;
     margin-right: 4vw;
   }
-`
+`;
 
 const HeroTextContainer = styled.div`
   position: absolute;
@@ -47,10 +47,10 @@ const HeroTextContainer = styled.div`
     width: clamp(12rem, 50vw, 36rem);
     transform: none;
     top: 10%;
-    left: 10%;
+    left: 7%;
     text-align: left;
   }
-`
+`;
 
 const ITPLogo = styled.img`
   width: 100%;
@@ -61,7 +61,7 @@ const ITPLogo = styled.img`
     width: 98%;
     margin-inline: 0;
   }
-`
+`;
 
 const H2 = styled.h2`
   font-size: clamp(0.8rem, 5vw, 2.5rem);
@@ -70,7 +70,7 @@ const H2 = styled.h2`
     font-size: clamp(1.7rem, 2.5vw, 2.5rem);
     line-height: 1.2;
   }
-`
+`;
 const H2_smaller = styled.h2`
   font-size: clamp(0.8rem, 4.6vw, 2rem);
   line-height: 1.15;
@@ -78,7 +78,7 @@ const H2_smaller = styled.h2`
     font-size: clamp(1.5rem, 2.2vw, 2.2rem);
     line-height: 1.2;
   }
-`
+`;
 
 const TitlePage: React.FC = () => {
   return (
@@ -91,10 +91,10 @@ const TitlePage: React.FC = () => {
           <H2_smaller>stadion miejski im. Henryka Reymana</H2_smaller>
         </HeroTextContainer>
         <BESTLogo src={BEST_logo} alt="BEST_logo" />
-        <Wave />
+        {/* <Wave /> */}
       </Section>
     </>
-  )
-}
+  );
+};
 
-export default TitlePage
+export default TitlePage;
