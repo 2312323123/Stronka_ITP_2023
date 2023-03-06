@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import useMediaQuery from "../utils/UseMediaQuery";
+import MovingGears from "./MovingGears";
 
 function importAll(r: any) {
   return r.keys().map(r);
@@ -19,6 +20,7 @@ const logos = importAll(
 const Container = styled.div`
   position: relative;
   display: grid;
+  top: 1.75rem;
 `;
 
 const ImgDesktop = styled.img`
@@ -312,6 +314,8 @@ const Sponsors: React.FC = () => {
               alt="img7"
             />
             <Crane src={imagesDesktop[8].default} alt="crane" />
+
+            <MovingGears />
 
             <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
             <SponsorsTitle>SPONSORZY</SponsorsTitle>

@@ -95,6 +95,15 @@ video {
 }
 body {
   background-color: #efd6bf;
+  overflow-x: hidden;
+  line-height: 1;
+  background-image: repeating-linear-gradient(
+      #e9c3a780 0 0.625px,
+      #0000 0.625px 27.5px
+    ),
+    repeating-linear-gradient(#0000 0 9.375px, #e9c3a7 9.375px 10.3125px),
+    repeating-linear-gradient(to right, #e9c3a780 0 3px, #0000 3px 132px),
+    repeating-linear-gradient(to right, #efd6bf80 0 32px, #e9c3a780 32px 33px);
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -110,10 +119,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-  background-color: #efd6bf;
-}
 ol,
 ul {
   list-style: none;
@@ -126,7 +131,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
