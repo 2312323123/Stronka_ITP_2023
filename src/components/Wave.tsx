@@ -17,7 +17,6 @@ const Wave = () => {
   `;
 
   const myStyle = {
-<<<<<<< HEAD
     height: "100%",
     width: "100%",
     transform: "rotate(180deg)",
@@ -26,16 +25,6 @@ const Wave = () => {
     top: "100%",
     left: "0",
   };
-=======
-    height: '100%',
-    width: '100%',
-    transform: 'rotate(180deg)',
-    fill: 'black', // '#cd5d28',
-    position: 'absolute',
-    top: '100%',
-    left: '0',
-  }
->>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

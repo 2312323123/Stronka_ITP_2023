@@ -23,7 +23,7 @@ const Img = styled.img`
 const Container = styled.div`
   position: relative;
   display: grid;
-  top: 2rem;
+  top: 1.75rem;
 `;
 
 const MapImg = styled.img`
