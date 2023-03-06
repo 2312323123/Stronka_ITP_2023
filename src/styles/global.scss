@@ -89,13 +89,14 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  font-family: "Unica One", sans-serif;
+  font-family: 'Unica One', sans-serif;
   font-size: clamp(1rem, 3vw, 1.4rem);
   color: #cd5d28;
 }
 body {
   background-color: #efd6bf;
   overflow-x: hidden;
+<<<<<<< HEAD
   line-height: 1;
   background-image: repeating-linear-gradient(
       #e9c3a780 0 0.625px,
@@ -104,6 +105,8 @@ body {
     repeating-linear-gradient(#0000 0 9.375px, #e9c3a7 9.375px 10.3125px),
     repeating-linear-gradient(to right, #e9c3a780 0 3px, #0000 3px 132px),
     repeating-linear-gradient(to right, #efd6bf80 0 32px, #e9c3a780 32px 33px);
+=======
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 }
 /* HTML5 display-role reset for older browsers */
 article,

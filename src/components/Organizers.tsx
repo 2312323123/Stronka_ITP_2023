@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 import React from "react";
 //@ts-ignore
 import img8_desktop from "../images/desktop_backgrounds/8.svg";
 //@ts-ignore
 import img6_mobile from "../images/mobile_backgrounds/6.jpg";
 import styled from "styled-components";
+=======
+import React from 'react'
+//@ts-ignore
+import img8_desktop from '../images/DesktopBackgrounds/8.svg'
+//@ts-ignore
+import img6_mobile from '../images/MobileBackgrounds/6.jpg'
+import styled from 'styled-components'
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 const Img = styled.img`
   width: 100%;
   height: 100%;
@@ -52,6 +61,7 @@ const TextBox = styled.div`
   @media (max-width: 768px) {
     display: none;
   } ;
+<<<<<<< HEAD
 `;
 
 const Picture = styled.picture`
@@ -59,6 +69,9 @@ const Picture = styled.picture`
   top: 1.75rem;
 };
 `;
+=======
+`
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 
 const NameText = styled.span`
   font-size: 120%;
@@ -77,13 +90,18 @@ const TextBoxPaulina = styled(TextBox)`
 
 const TextBoxMateusz = styled(TextBox)`
   left: 72.9%;
+<<<<<<< HEAD
   top: 85%;
 `;
+=======
+`
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 
 const Organizers: React.FC = () => {
   return (
     <>
       <Container>
+<<<<<<< HEAD
         <Picture>
           <source srcSet={img8_desktop} media="(min-width: 769px)" />
           <source srcSet={img6_mobile} media="(max-width: 768px)" />
@@ -95,6 +113,16 @@ const Organizers: React.FC = () => {
         <TextBoxMikolaj>
           <NameText>
             MIKOŁAJ ŻUCHOWSKI <br />{" "}
+=======
+        <picture>
+          <source srcSet={img8_desktop} media="(min-width: 769px)" />
+          <source srcSet={img6_mobile} media="(max-width: 768px)" />
+          <Img src={img8_desktop} alt="last page" />
+        </picture>
+        <TextBoxMikolaj>
+          <NameText>
+            MIKOŁAJ ŻUCHOWSKI <br />{' '}
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
           </NameText>
           KOODRYNATOR DS. LOGISTYKI <br />
           508 411 959 <br />
@@ -102,7 +130,11 @@ const Organizers: React.FC = () => {
         </TextBoxMikolaj>
         <TextBoxPaulina>
           <NameText>
+<<<<<<< HEAD
             PAULINA SKRZYPCZAK <br />{" "}
+=======
+            PAULINA SKRZYPCZAK <br />{' '}
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
           </NameText>
           GŁÓWNY KOORDYNATOR <br />
           516 321 234 <br />
@@ -110,7 +142,11 @@ const Organizers: React.FC = () => {
         </TextBoxPaulina>
         <TextBoxMateusz>
           <NameText>
+<<<<<<< HEAD
             MATEUSZ WIRKIJOWSKI <br />{" "}
+=======
+            MATEUSZ WIRKIJOWSKI <br />{' '}
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
           </NameText>
           KOODRYNATOR DS. KONTAKTU Z FIRMAMI <br />
           530 397 519 <br />
@@ -118,7 +154,14 @@ const Organizers: React.FC = () => {
         </TextBoxMateusz>
       </Container>
     </>
+<<<<<<< HEAD
   );
 };
 
 export default Organizers;
+=======
+  )
+}
+
+export default Organizers
+>>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
