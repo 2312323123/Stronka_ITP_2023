@@ -91,7 +91,7 @@ const TitlePage: React.FC = () => {
           <H2_smaller>stadion miejski im. Henryka Reymana</H2_smaller>
         </HeroTextContainer>
         <BESTLogo src={BEST_logo} alt="BEST_logo" />
-        {/* <Wave /> */}
+        <Wave />
       </Section>
     </>
   );

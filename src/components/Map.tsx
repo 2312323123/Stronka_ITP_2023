@@ -1,6 +1,6 @@
 import React from "react";
 //@ts-ignore
-import img3_desktop from "../images/desktop_backgrounds/3.jpg";
+import img3_desktop from "../images/desktop_backgrounds/3.svg";
 //@ts-ignore
 import img3_mobile from "../images/mobile_backgrounds/3.png";
 //@ts-ignore
@@ -23,13 +23,15 @@ const Img = styled.img`
 const Container = styled.div`
   position: relative;
   display: grid;
+  top: 2rem;
 `;
 
 const MapImg = styled.img`
   position: absolute;
-  top: 2%;
+  top: 12%;
   left: 3%;
   width: 94%;
+  z-index: 2;
   @media (max-width: 769px) {
     width: 95%;
     top: 15%;
@@ -38,8 +40,9 @@ const MapImg = styled.img`
 
 const List = styled.img`
   position: absolute;
-  top: 64%;
+  top: 74%;
   width: 18%;
+  z-index: 2;
   @media (max-width: 769px) {
     top: 40%;
     width: 25%;
@@ -47,7 +50,9 @@ const List = styled.img`
 `;
 
 const List1 = styled(List)`
-  left: 7%;
+  left: 9%;
+  top: 74%;
+  z-index: 2;
   @media (max-width: 769px) {
     top: 36%;
     left: 4%;
@@ -55,9 +60,10 @@ const List1 = styled(List)`
 `;
 
 const List2 = styled(List)`
-  left: 33.4%;
-  top: 67%;
+  left: 32.4%;
+  top: 74%;
   width: 15%;
+  z-index: 2;
   @media (max-width: 769px) {
     left: 25%;
     top: 48%;
@@ -66,9 +72,10 @@ const List2 = styled(List)`
 `;
 
 const List3 = styled(List2)`
-  left: 52%;
-  top: 65.4%;
+  left: 51%;
+  top: 72.25%;
   width: 17%;
+  z-index: 2;
   @media (max-width: 769px) {
     left: 70%;
     width: 28%;
@@ -77,7 +84,8 @@ const List3 = styled(List2)`
 `;
 
 const List4 = styled(List1)`
-  left: 75.5%;
+  left: 72.5%;
+  z-index: 2;
   @media (max-width: 769px) {
     left: 48%;
   }

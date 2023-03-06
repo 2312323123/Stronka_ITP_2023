@@ -15,6 +15,26 @@ const Container = styled.div`
   display: grid;
 `;
 
+const ContactBoxTitle = styled.h2`
+  position: absolute;
+  padding-inline: 2em;
+  padding-block: 1.5em;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: #e8d9cb;
+  border: 0.15rem solid;
+  border-radius: 3rem 3rem 0 0;
+  font-size: clamp(1rem, 2vw, 2.4rem);
+  font-family: "Unica One", sans-serif;
+  text-align: center;
+  line-height: 1.2;
+  @media (max-width: 768px) {
+    display: none;
+  } ;
+};
+`;
+
 const TextBox = styled.div`
   position: absolute;
   background-color: #e8d9cb;
@@ -34,6 +54,12 @@ const TextBox = styled.div`
   } ;
 `;
 
+const Picture = styled.picture`
+  position: relative;
+  top: 1.75rem;
+};
+`;
+
 const NameText = styled.span`
   font-size: 120%;
   font-weight: 600;
@@ -41,25 +67,31 @@ const NameText = styled.span`
 
 const TextBoxMikolaj = styled(TextBox)`
   left: 9.9%;
+  top: 85%;
 `;
 
 const TextBoxPaulina = styled(TextBox)`
   left: 41.6%;
+  top: 85%;
 `;
 
 const TextBoxMateusz = styled(TextBox)`
   left: 72.9%;
+  top: 85%;
 `;
 
 const Organizers: React.FC = () => {
   return (
     <>
       <Container>
-        <picture>
+        <Picture>
           <source srcSet={img8_desktop} media="(min-width: 769px)" />
           <source srcSet={img6_mobile} media="(max-width: 768px)" />
           <Img src={img8_desktop} alt="last page" />
-        </picture>
+        </Picture>
+        <ContactBoxTitle>
+          KONTAKT <br /> Z ORGANIZATORAMI
+        </ContactBoxTitle>
         <TextBoxMikolaj>
           <NameText>
             MIKOŁAJ ŻUCHOWSKI <br />{" "}

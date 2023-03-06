@@ -20,6 +20,7 @@ const logos = importAll(
 const Container = styled.div`
   position: relative;
   display: grid;
+  top: 2rem;
 `;
 
 const ImgDesktop = styled.img`
