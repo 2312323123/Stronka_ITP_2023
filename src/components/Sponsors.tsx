@@ -1,13 +1,7 @@
-<<<<<<< HEAD
 import React from "react";
 import styled from "styled-components";
 import useMediaQuery from "../utils/UseMediaQuery";
 import MovingGears from "./MovingGears";
-=======
-import React from 'react'
-import styled from 'styled-components'
-import MovingGears from './MovingGears'
->>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 
 function importAll(r: any) {
   return r.keys().map(r);
@@ -263,20 +257,12 @@ const TitleName = styled.div`
   color: #d2764a;
   text-align: center;
   align-items: center;
-<<<<<<< HEAD
   display: flex;
-=======
-  display: flexbox;
->>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
   justify-content: center;
   @media (max-width: 768px) {
     display: none;
   } ;
-<<<<<<< HEAD
 `;
-=======
-`
->>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 
 const MainSponsorTitle = styled(TitleName)`
   left: 43%;
@@ -329,7 +315,6 @@ const Sponsors: React.FC = () => {
             />
             <Crane src={imagesDesktop[8].default} alt="crane" />
 
-<<<<<<< HEAD
             <MovingGears />
 
             <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
@@ -362,22 +347,6 @@ const Sponsors: React.FC = () => {
             />
           </>
         )}
-=======
-        <MovingGears />
-
-        <MainSponsorTitle>SPONSOR GŁÓWNY</MainSponsorTitle>
-        <SponsorsTitle>SPONSORZY</SponsorsTitle>
-        <StudentPartner>
-          PARTNER <br /> STREFY <br /> STUDENTA
-        </StudentPartner>
-        <ContentPartner>
-          PARTNER <br /> MERYTORYCZNY{' '}
-        </ContentPartner>
-        <MediaTitle>PATRONI MEDIALNI</MediaTitle>
-
-        <ImgMobile src={imagesMobile[3].default} alt="img4" />
-        <ImgMobile src={imagesMobile[4].default} alt="img5" />
->>>>>>> d902712353209ebd113fd4dbc06c48541a2bd137
 
         <Sabre href="https://www.sabre.com/locations/poland/" target="_blank">
           <SponsorImg src={logos[0].default} alt="Sabre" />
