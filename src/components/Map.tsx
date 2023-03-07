@@ -52,6 +52,7 @@ const List = styled.img`
 const List1 = styled(List)`
   left: 9%;
   top: 74%;
+  width: 18%;
   z-index: 2;
   @media (max-width: 769px) {
     top: 36%;
@@ -60,9 +61,9 @@ const List1 = styled(List)`
 `;
 
 const List2 = styled(List)`
-  left: 32.4%;
+  left: 30.4%;
   top: 74%;
-  width: 15%;
+  width: 18%;
   z-index: 2;
   @media (max-width: 769px) {
     left: 25%;
@@ -72,9 +73,9 @@ const List2 = styled(List)`
 `;
 
 const List3 = styled(List2)`
-  left: 51%;
+  left: 50%;
   top: 72.25%;
-  width: 17%;
+  width: 19%;
   z-index: 2;
   @media (max-width: 769px) {
     left: 70%;
